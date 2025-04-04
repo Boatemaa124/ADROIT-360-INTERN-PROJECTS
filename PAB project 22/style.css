@@ -1,0 +1,51 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+background: white;    
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.container {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+width: 420px;
+justify-content: center;
+}
+
+.container .box {
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 12px;
+}
+
+.box .image {
+    background-image: url('https://img.freepik.com/free-vector/water-drop-splash-design-concept_1284-26169.jpg?t=st=1741688435~exp=1741692035~hmac=3456ed1d59cca1d9432a21330db9fe6fae9a3ebb90b3e2afce1a42f50f4ac3da&w=740');
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.box.hovered {
+    border: 2px dashed #333;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}

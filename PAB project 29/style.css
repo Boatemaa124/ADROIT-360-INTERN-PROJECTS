@@ -1,0 +1,109 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up basic layout styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Centering the content */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Style the input form */
+.user-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+/* Add a GitHub icon styling */
+.fa-github {
+    font-size: 48px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Style for the main content area */
+main {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the user profile results */
+.profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.profile a {
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}

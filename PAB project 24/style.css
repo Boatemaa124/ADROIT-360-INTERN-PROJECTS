@@ -1,0 +1,58 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Kinetic loader container */
+.kinetic {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+/* Animation keyframes for kinetic motion */
+@keyframes kineticAnimation {
+    0% {
+        transform: translateX(0) translateY(0);
+        background-color: #3498db;
+    }
+    25% {
+        transform: translateX(100px) translateY(0);
+        background-color: #e74c3c;
+    }
+    50% {
+        transform: translateX(100px) translateY(100px);
+        background-color: #2ecc71;
+    }
+    75% {
+        transform: translateX(0) translateY(100px);
+        background-color: #f39c12;
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+        background-color: #3498db;
+    }
+}
+
+/* The kinetic square itself */
+.kinetic:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    animation: kineticAnimation 3s infinite ease-in-out;
+}
