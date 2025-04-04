@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.range-container {
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+/* Customizing the range slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+/* Customizing the range slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #28a745;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    transition: 0.3s;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #28a745;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #218838;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #218838;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}

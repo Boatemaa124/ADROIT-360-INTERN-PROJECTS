@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 320px;
+    transform: rotateX(60deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    margin: 2px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.boxes.magic .box {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #ff6600, #6600ff);
+}

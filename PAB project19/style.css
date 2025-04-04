@@ -1,0 +1,51 @@
+/* Basic styling for the slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this as per your need */
+    overflow: hidden;
+  }
+  
+  /* All sliders are initially hidden */
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* The active slider will be visible */
+  .slider.slider-active {
+    opacity: 1;
+  }
+  
+  /* Arrow button styles */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  /* FontAwesome icon styling */
+  .fas {
+    font-size: 30px;
+  }
+  

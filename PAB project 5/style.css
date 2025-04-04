@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: url('https://img.freepik.com/free-photo/portrait-female-mermaid-with-fantasy-tail-dreamy-aesthetic_23-2151396568.jpg?uid=R177736722&ga=GA1.1.435248090.1741688389&semt=ais_hybrid&w=740') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(10px);
+    transition: filter 1s ease;
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #c9d521;
+}
